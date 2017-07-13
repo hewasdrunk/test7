@@ -1,0 +1,160 @@
+body{
+    background:#29BDE0;
+}
+
+
+.header{
+    background:#29BDE0;
+    text-align: center;
+    font-size: 2rem;color:#fff;font-weight: 600;
+    line-height: 4rem;
+}
+.nav-hl{
+    max-width:2rem;top:1rem;
+
+}
+.nav-hr{
+    max-width:2rem;top:1rem;
+}
+.cell1{
+    position: relative;
+    background:#B9E9F5;
+    font-size: 1.5rem;font-weight: 600;
+    line-height: 4rem;
+    max-height:4rem ;
+    min-height:4rem;
+    padding-left:3rem;
+}
+.cell2{
+    position: relative;
+    font-size: 1rem;color:#fff;
+    line-height: 1rem;
+    max-height:4rem ;
+    min-height:4rem;
+    padding-left:3.5rem;
+    /*border:0.1rem solid #ff0000;*/
+}
+#triangle-down{
+    width:0;height:0;
+    border-left:0.6rem solid transparent;
+    border-right:0.6rem solid transparent;
+    border-top:1.2rem solid #B9E9F5;
+}
+.triangle{
+    position:absolute;left:1rem;
+}
+.item-menu{
+    /*display: flex;flex-wrap:nowrap;*/
+}
+
+
+
+/*.item1{*/
+    /*flex:0 0 auto;*/
+    /*flex-direction: row;*/
+    /*width:33%;*/
+    /*position:relative;overflow:hidden;*/
+    /*background:pink;*/
+    /*border:0.1rem solid #ff0000;*/
+/*}*/
+/*.item1-in:after{*/
+    /*content:'';*/
+    /*display:block;*/
+    /*margin-top:100%;*/
+/*}*/
+/*直接是使用basecss了*/
+
+
+
+#a{
+    background:url("../img/audio.png")no-repeat 50% 50%;
+    background-size: cover;
+    border-radius:50%;border:none;outline:none;
+    min-width: 2rem;
+    min-height: 2rem;
+    cursor:pointer;
+}
+
+/*---内容设定---*/
+.box1{
+    width:101.22px;
+    height:101.22px;
+    /*margin 0 auto;*/
+    background:#83B09A;
+    border:5px solid #fff;
+    cursor: pointer;
+}
+.box1>span:first-child{
+    display: inline-block;
+    width:101.22px;
+    height:80.22px;
+    background:#F5C97B;
+    font-size: 2.5rem;
+    line-height:80.22px;
+}
+.box1>span:nth-child(2){
+    display: inline-block;
+    width:101.22px;
+    height:21px;
+    font-size: 1.3rem;color:#fff;
+    line-height:21px;
+}
+.bc1{background:url("../img/sprite.png")no-repeat -0.2rem -0.3rem;}
+.bc2{background:url("../img/sprite.png")no-repeat -2.8rem -0.3rem;}
+.bc3{background:url("../img/sprite.png")no-repeat -5.3rem -0.3rem;}
+.bc4{background:url("../img/sprite.png")no-repeat -7.8rem -0.3rem;}
+.bc1,.bc2,.bc3,.bc4{
+    display: inline-block;
+    width:2rem;height:2rem;
+    float:left;
+    border:0.1rem solid #fff;
+}
+.bc1,.bc2,.bc3{
+    margin-right:0.2rem;
+}
+.bc{
+    /*width:111.22px;*/
+    width:113px;
+    position:absolute;
+    /*top:9rem;*/
+    margin-left: auto;
+    margin-right: auto;
+    top:10rem;
+    left:0;
+    /*padding:0;*/
+    /*left: -3.78px;*/
+    right: 0;
+    bottom: 0;
+    /*奇怪：因为只有设定width才能通过auto和四方为0，来让定位的目标居中。
+    但是在google中width必须大于内容宽。不能相等。而且就算指定padding为0也无法一行显示。
+    所以只能通过相消法增大width度和left来实现*/
+    visibility: hidden;
+    cursor: pointer;
+}
+.place-in:after{
+    margin-top:150px;
+    /*margin-top:130%;*/
+
+}
+.place-cont{
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.place:hover .bc{
+    visibility: visible;
+}
+
+/*---底部设定---*/
+.footer-1{
+    background:#29BDE0;
+    text-align: center;
+}
+.buttom-fc{
+    width:50%;
+    background:#FBB435;
+    color:#fff;
+}

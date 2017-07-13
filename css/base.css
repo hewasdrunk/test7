@@ -1,0 +1,109 @@
+html{
+    font-size:62.5%;
+    height:100%;
+    /*顶部和底部定位，内容自适应：高度设置*/
+}
+body{
+    margin: 0;padding: 0; width:100%;
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    /*顶部和底部定位，内容自适应：后三行设定*/
+    /*max-width:640px;*/
+}
+ul,li{margin: 0;padding: 0; }
+
+
+
+/*---九宫格---*/
+.place{
+    float:left;
+    width:32.2%;
+    position:relative;
+    margin:0.5%;
+    overflow:hidden;
+}
+.place-in:after{
+    content:'';
+    display:block;
+    /*margin-top:100%;*/
+    /*取消margin-top:100%;设定就可以把原先的正方形通过改变margin-top百分比而设定为矩形了*/
+}
+.place-cont{
+    position:absolute;
+    /*top:0;*/
+    /*width:100%;*/
+    text-align: center;
+}
+
+
+/*---头部设置---*/
+.header{
+    position:relative;
+    /*不能设定为fixed，否则不能兼容flex布局*/
+    top:0;
+    width:100%;
+    /*height:10%;*/
+    /*height:4rem;*/
+    max-height:4rem ;
+    min-height:4rem;
+    flex:0 0 auto;
+    /*顶部和底部定位，内容自适应：最后一行表示header 采用固定的高度，只占用必须的空间*/
+}
+.nav-hl{
+    position:absolute;
+    top:0;left:1rem;
+    cursor:pointer;
+}
+.nav-hr{
+    position:absolute;
+    top:0;right:1rem;
+    cursor:pointer;
+
+}
+
+/*---内容设置---*/
+.main-content{
+    flex: 1 0 auto;
+    /* 顶部和底部定位，内容自适应：将 flex-grow 设置为1，该元素会占用全部可使用空间
+              而其他元素该属性值为0，因此不会得到多余的空间*/
+    /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+}
+
+
+/*---脚部设置---*/
+.footer{
+    flex: 0 0 auto;
+    /* 顶部和底部定位，内容自适应：和 header 一样，footer 也采用固定高度*/
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+}
+.footer-1{
+    position: fixed;bottom:0;
+    width:100%;
+    min-height: 5rem;
+
+}
+.buttom-fc{
+    padding:1rem;margin:1rem 0;
+    font-size: 2rem;
+    cursor:pointer;
+}
+
+.nav-fl{
+    position:absolute;
+    left:1rem;
+    cursor:pointer;
+    border-radius:0.5rem;border:none;
+}
+.nav-fr{
+    position:absolute;
+    right:1rem;
+    cursor:pointer;
+
+}
+.foot{
+    clear:both;
+    /*差点漏了浮动*/
+    height:5rem;
+    /*padding:1rem;border:0.1rem solid #ff0000;*/
+}
